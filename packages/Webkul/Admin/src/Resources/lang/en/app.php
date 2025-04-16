@@ -39,6 +39,9 @@ return [
         'delete'          => 'Delete',
         'export'          => 'Export',
         'mass-delete'     => 'Mass Delete',
+        'data-transfer'   => 'Data Transfer',
+        'imports'         => 'Imports',
+        'import'          => 'Import',
     ],
 
     'users' => [
@@ -151,30 +154,31 @@ return [
             ],
 
             'index' => [
-                'from'         => 'From',
-                'to'           => 'To',
-                'cc'           => 'Cc',
-                'bcc'          => 'Bcc',
                 'all'          => 'All',
-                'planned'      => 'Planned',
-                'calls'        => 'Calls',
-                'meetings'     => 'Meetings',
-                'lunches'      => 'Lunches',
-                'files'        => 'Files',
-                'quotes'       => 'Quotes',
-                'notes'        => 'Notes',
-                'emails'       => 'Emails',
-                'change-log'   => 'Changelogs',
+                'bcc'          => 'Bcc',
                 'by-user'      => 'By :user',
-                'scheduled-on' => 'Scheduled on',
-                'location'     => 'Location',
-                'participants' => 'Participants',
-                'mark-as-done' => 'Mark as Done',
+                'calls'        => 'Calls',
+                'cc'           => 'Cc',
+                'change-log'   => 'Changelogs',
                 'delete'       => 'Delete',
                 'edit'         => 'Edit',
-                'view'         => 'View',
-                'unlink'       => 'Unlink',
+                'emails'       => 'Emails',
                 'empty'        => 'Empty',
+                'files'        => 'Files',
+                'from'         => 'From',
+                'location'     => 'Location',
+                'lunches'      => 'Lunches',
+                'mark-as-done' => 'Mark as Done',
+                'meetings'     => 'Meetings',
+                'notes'        => 'Notes',
+                'participants' => 'Participants',
+                'planned'      => 'Planned',
+                'quotes'       => 'Quotes',
+                'scheduled-on' => 'Scheduled on',
+                'system'       => 'System',
+                'to'           => 'To',
+                'unlink'       => 'Unlink',
+                'view'         => 'View',
 
                 'empty-placeholders' => [
                     'all' => [
@@ -1091,6 +1095,78 @@ return [
             ],
         ],
 
+        'marketing' => [
+            'events' => [
+                'index' => [
+                    'create-btn'          => 'Create Event',
+                    'title'               => 'Events',
+                    'create-success'      => 'Event created successfully.',
+                    'update-success'      => 'Event updated successfully.',
+                    'delete-success'      => 'Event deleted successfully.',
+                    'delete-failed'       => 'Event can not be deleted.',
+                    'mass-delete-success' => 'Events deleted successfully',
+
+                    'datagrid'   => [
+                        'delete'       => 'Delete',
+                        'edit'         => 'Edit',
+                        'id'           => 'ID',
+                        'name'         => 'Name',
+                        'description'  => 'Description',
+                        'date'         => 'Date',
+                    ],
+
+                    'create'     => [
+                        'title'       => 'Create Event',
+                        'name'        => 'Name',
+                        'date'        => 'Date',
+                        'description' => 'Description',
+                        'save-btn'    => 'Save Event',
+                    ],
+
+                    'edit' => [
+                        'title' => 'Edit Event',
+                    ],
+                ],
+            ],
+
+            'campaigns' => [
+                'index' => [
+                    'create-btn'          => 'Create Campaigns',
+                    'title'               => 'Campaigns',
+                    'create-success'      => 'Campaign created successfully.',
+                    'update-success'      => 'Campaign updated successfully.',
+                    'delete-success'      => 'Campaign deleted successfully.',
+                    'delete-failed'       => 'Campaign can not be deleted.',
+                    'mass-delete-success' => 'Campaigns deleted successfully.',
+
+                    'datagrid'   => [
+                        'id'       => 'ID',
+                        'name'     => 'Name',
+                        'subject'  => 'Subject',
+                        'status'   => 'Status',
+                        'active'   => 'Active',
+                        'inactive' => 'Inactive',
+                        'edit'     => 'Edit',
+                        'delete'   => 'Delete',
+                    ],
+
+                    'create'     => [
+                        'title'          => 'Create Campaign',
+                        'name'           => 'Name',
+                        'type'           => 'Type',
+                        'subject'        => 'Subject',
+                        'event'          => 'Event',
+                        'email-template' => 'Email Template',
+                        'status'         => 'Status',
+                    ],
+
+                    'edit' => [
+                        'title' => 'Edit Campaign',
+                    ],
+                ],
+            ],
+        ],
+
         'tags' => [
             'index' => [
                 'create-btn'     => 'Create Tag',
@@ -1518,6 +1594,109 @@ return [
                 'validations'           => 'Validations',
             ],
         ],
+
+        'data-transfer' => [
+            'imports' => [
+                'create' => [
+                    'action'              => 'Action',
+                    'allowed-errors'      => 'Allowed Errors',
+                    'back-btn'            => 'Back',
+                    'create-update'       => 'Create/Update',
+                    'delete'              => 'Delete',
+                    'download-sample'     => 'Download Sample',
+                    'field-separator'     => 'Field Separator',
+                    'file'                => 'File',
+                    'general'             => 'General',
+                    'images-directory'    => 'Images Directory Path',
+                    'process-in-queue'    => 'Process In Queue',
+                    'results'             => 'Results',
+                    'save-btn'            => 'Save Import',
+                    'settings'            => 'Settings',
+                    'skip-errors'         => 'Skip Errors',
+                    'stop-on-errors'      => 'Stop on Errors',
+                    'title'               => 'Create Import',
+                    'type'                => 'Type',
+                    'validation-strategy' => 'Validation Strategy',
+                ],
+
+                'edit' => [
+                    'action'              => 'Action',
+                    'allowed-errors'      => 'Allowed Errors',
+                    'back-btn'            => 'Back',
+                    'create-update'       => 'Create/Update',
+                    'delete'              => 'Delete',
+                    'download-sample'     => 'Download Sample',
+                    'field-separator'     => 'Field Separator',
+                    'file'                => 'File',
+                    'general'             => 'General',
+                    'images-directory'    => 'Images Directory Path',
+                    'process-in-queue'    => 'Process In Queue',
+                    'results'             => 'Results',
+                    'save-btn'            => 'Save Import',
+                    'settings'            => 'Settings',
+                    'skip-errors'         => 'Skip Errors',
+                    'stop-on-errors'      => 'Stop on Errors',
+                    'title'               => 'Edit Import',
+                    'type'                => 'Type',
+                    'validation-strategy' => 'Validation Strategy',
+                ],
+
+                'index' => [
+                    'button-title' => 'Create Import',
+                    'title'        => 'Imports',
+
+                    'datagrid' => [
+                        'actions'       => 'Actions',
+                        'completed-at'  => 'Completed At',
+                        'created'       => 'Created',
+                        'delete'        => 'Delete',
+                        'deleted'       => 'Deleted',
+                        'edit'          => 'Edit',
+                        'error-file'    => 'Error File',
+                        'id'            => 'ID',
+                        'started-at'    => 'Started At',
+                        'state'         => 'State',
+                        'summary'       => 'Summary',
+                        'type'          => 'Type',
+                        'updated'       => 'Updated',
+                        'uploaded-file' => 'Uploaded File',
+                    ],
+                ],
+
+                'import' => [
+                    'back-btn'                => 'Back',
+                    'completed-batches'       => 'Total Batches Completed:',
+                    'download-error-report'   => 'Download Full Report',
+                    'edit-btn'                => 'Edit',
+                    'imported-info'           => 'Congratulations! Your import was successful.',
+                    'importing-info'          => 'Import In Process',
+                    'indexing-info'           => 'Resources Indexing (Price, Inventory and Elastic Search) In Progress',
+                    'linking-info'            => 'Resources Linking In Progress',
+                    'progress'                => 'Progress:',
+                    'title'                   => 'Import',
+                    'total-batches'           => 'Total Batches:',
+                    'total-created'           => 'Total Records Created:',
+                    'total-deleted'           => 'Total Records Deleted:',
+                    'total-errors'            => 'Total Errors:',
+                    'total-invalid-rows'      => 'Total Invalid Rows:',
+                    'total-rows-processed'    => 'Total Rows Processed:',
+                    'total-updated'           => 'Total Records Updated:',
+                    'validate'                => 'Validate',
+                    'validate-info'           => 'Click on Validate Data to check your import.',
+                    'validating-info'         => 'The data started reading and Validating',
+                    'validation-failed-info'  => 'Your import is invalid. Please fix the following errors and try again.',
+                    'validation-success-info' => 'Your import is valid. Click on Import to start the import process.',
+                ],
+
+                'create-success'    => 'Import created successfully.',
+                'delete-failed'     => 'Import deletion failed unexpectedly.',
+                'delete-success'    => 'Import deleted successfully.',
+                'not-valid'         => 'Import is invalid',
+                'nothing-to-import' => 'There are no resources to import.',
+                'setup-queue-error' => 'Please change your queue driver to "database" or "redis" to start the import process.',
+                'update-success'    => 'Import updated successfully.',
+            ],
+        ],
     ],
 
     'activities' => [
@@ -1670,17 +1849,22 @@ return [
 
     'common' => [
         'custom-attributes' => [
-            'select-country' => 'Select Country',
-            'select-state'   => 'Select State',
-            'state'          => 'State',
-            'city'           => 'City',
-            'postcode'       => 'Postcode',
-            'work'           => 'Work',
-            'home'           => 'Home',
-            'add-more'       => 'Add More',
-            'select'         => 'Select',
-            'country'        => 'Country',
-            'address'        => 'Address',
+            'add-more'             => 'Add More',
+            'address'              => 'Address',
+            'city'                 => 'City',
+            'contact'              => 'Contact Numbers',
+            'country'              => 'Country',
+            'email'                => 'Email',
+            'home'                 => 'Home',
+            'postcode'             => 'Postcode',
+            'save'                 => 'Save',
+            'select'               => 'Select',
+            'select-country'       => 'Select Country',
+            'select-state'         => 'Select State',
+            'state'                => 'State',
+            'update-contact-title' => 'Update Contact Numbers',
+            'update-emails-title'  => 'Update Contact Emails',
+            'work'                 => 'Work',
         ],
     ],
 
@@ -1690,6 +1874,20 @@ return [
         'update-failed'     => 'Leads can not be deleted.',
         'destroy-success'   => 'Lead deleted successfully.',
         'destroy-failed'    => 'Lead can not be deleted.',
+
+        'file' => [
+            'data-not-found'         => 'Data not found.',
+            'empty-content'          => 'PDF content is empty or could not be extracted.',
+            'failed-extract'         => 'Failed to extract text from file.',
+            'insufficient-info'      => 'Due to insufficient data, we are unable to process your request at the moment.',
+            'invalid-base64'         => 'Invalid base64 format.',
+            'invalid-format'         => 'Invalid JSON format.',
+            'invalid-response'       => 'Invalid AI response format.',
+            'missing-api-key'        => 'Missing API key or model configuration.',
+            'not-found'              => 'File not found.',
+            'recursive-call'         => 'Recursive call detected.',
+            'text-generation-failed' => 'Text extraction failed. The file might be empty or unreadable.',
+        ],
 
         'index' => [
             'title'      => 'Leads',
@@ -1755,6 +1953,15 @@ return [
                 'all-pipelines'       => 'All Pipelines',
                 'create-new-pipeline' => 'Create New Pipeline',
             ],
+
+            'upload' => [
+                'create-lead'   => 'Create Lead Using AI',
+                'file'          => 'File Upload',
+                'file-info'     => 'Only pdf,bmp,jpg,jpeg,png format files are accepted.',
+                'file-required' => 'Please select at least one valid file to proceed.',
+                'save-btn'      => 'Save',
+                'upload-file'   => 'Upload File',
+            ],
         ],
 
         'create' => [
@@ -1812,7 +2019,7 @@ return [
                 'title' => 'About Lead',
             ],
 
-            'quotes'=> [
+            'quotes' => [
                 'subject'         => 'Subject',
                 'expired-at'      => 'Expired At',
                 'sub-total'       => 'Sub Total',
@@ -1867,11 +2074,14 @@ return [
 
     'configuration' => [
         'index' => [
-            'back'         => 'Back',
-            'save-btn'     => 'Save Configuration',
-            'save-success' => 'Configuration Saved Successfully.',
-            'search'       => 'Search',
-            'title'        => 'Configuration',
+            'back'           => 'Back',
+            'delete'         => 'Delete',
+            'save-btn'       => 'Save Configuration',
+            'save-success'   => 'Configuration Saved Successfully.',
+            'search'         => 'Search',
+            'select-country' => 'Select Country',
+            'select-state'   => 'Select State',
+            'title'          => 'Configuration',
 
             'general'  => [
                 'title'   => 'General',
@@ -1883,6 +2093,98 @@ return [
                     'locale-settings' => [
                         'title'       => 'Locale Settings',
                         'title-info'  => 'Defines the language used in the user interface, such as Arabic (ar), English (en), Spanish (es), Persian(fa) and Turkish (tr).',
+                    ],
+
+                    'admin-logo' => [
+                        'logo-image' => 'Logo Image',
+                        'title'      => 'Admin Logo',
+                        'title-info' => 'Configure logo image for your admin panel.',
+                    ],
+                ],
+
+                'settings' => [
+                    'title' => 'Settings',
+                    'info'  => 'Update your settings here.',
+
+                    'footer' => [
+                        'info'       => 'We can configure the powered by section here.',
+                        'powered-by' => 'Powered by text editor',
+                        'title'      => 'Powered by Section Configurations',
+                    ],
+
+                    'menu' => [
+                        'activities'     => 'Activities',
+                        'configuration'  => 'Configuration',
+                        'contacts'       => 'Contacts',
+                        'dashboard'      => 'Dashboard',
+                        'draft'          => 'Draft',
+                        'inbox'          => 'Inbox',
+                        'info'           => 'We can configure the menu items name here.',
+                        'leads'          => 'Leads',
+                        'mail'           => 'Mail',
+                        'organizations'  => 'Organizations',
+                        'outbox'         => 'Outbox',
+                        'persons'        => 'Persons',
+                        'products'       => 'Products',
+                        'quotes'         => 'Quotes',
+                        'sent'           => 'Sent',
+                        'settings'       => 'Settings',
+                        'title'          => 'Menu Item Configurations',
+                        'trash'          => 'Trash',
+                    ],
+
+                    'menu-color' => [
+                        'brand-color' => 'Brand Color',
+                        'info'        => 'We can change the menu items colors here.',
+                        'title'       => 'Menu Item Color Configurations',
+                    ],
+                ],
+            ],
+
+            'email' => [
+                'title' => 'Email Settings',
+                'info'  => 'Email configuration for the application.',
+
+                'imap' => [
+                    'title' => 'IMAP Settings',
+                    'info'  => 'IMAP email configuration for receiving emails.',
+
+                    'account' => [
+                        'title'         => 'IMAP Account',
+                        'title-info'    => 'Configure your IMAP account settings here.',
+                        'host'          => 'Host',
+                        'port'          => 'Port',
+                        'encryption'    => 'Encryption Type',
+                        'validate-cert' => 'Validate SSL Certificate',
+                        'username'      => 'IMAP Username',
+                        'password'      => 'IMAP Password',
+                    ],
+                ],
+            ],
+
+            'magic-ai' => [
+                'title' => 'Magic AI',
+                'info'  => 'Magic AI configuration for the application.',
+
+                'settings' => [
+                    'api-key'             => 'API Key',
+                    'api-key-info'        => 'Remember to use a OpenRouter API key for each model. It\'s a simple step to enhance security and performance.',
+                    'enable'              => 'Enable',
+                    'info'                => 'Enhance your Magic AI experience with your OpenRouter API Key. Integrate it now for a seamless, personalized AI adventure tailored just for you! Effortlessly customize settings and take control of your AI journey.',
+                    'other'               => 'Other Model',
+                    'other-model'         => 'For other models, use the Model ID from OpenRouter.',
+                    'doc-generation'      => 'DOC Generation',
+                    'doc-generation-info' => 'Enable the DOC Generation feature to automatically extract data from DOC files and convert them into text format. Enhance your productivity and efficiency by enabling this feature to streamline your workflow.',
+                    'title'               => 'General Settings',
+
+                    'models'     => [
+                        'deepseek-r1'           => 'Deepseek R1 Distill-llama-8b',
+                        'gemini-2-0-flash-001'  => 'Gemini 2.0 flash-001',
+                        'gpt-4o'                => 'GPT-4.0',
+                        'gpt-4o-mini'           => 'GPT-4.0 mini',
+                        'grok-2-1212'           => 'Grok 2.12',
+                        'llama-3-2-3b-instruct' => 'Llama 3.2 3b Instruct',
+                        'title'                 => 'Models',
                     ],
                 ],
             ],
@@ -1996,6 +2298,10 @@ return [
         'email-templates'      => 'Email Templates',
         'email'                => 'Email',
         'email-templates-info' => 'Add, edit or delete email templates from CRM',
+        'events'               => 'Events',
+        'events-info'          => 'Add, edit or delete events from CRM',
+        'campaigns'            => 'Campaigns',
+        'campaigns-info'       => 'Add, edit or delete campaigns from CRM',
         'workflows'            => 'Workflows',
         'workflows-info'       => 'Add, edit or delete workflows from CRM',
         'webhooks'             => 'Webhooks',
@@ -2014,6 +2320,8 @@ return [
         'warehouses'           => 'Warehouses',
         'warehouse'            => 'Warehouse',
         'warehouses-info'      => 'Add, edit or delete warehouses from CRM',
+        'data_transfer'        => 'Data Transfer',
+        'data_transfer_info'   => 'Manage persons, products and leads data transfer related settings in the CRM',
     ],
 
     'user' => [
@@ -2054,6 +2362,12 @@ return [
                     'thanks'            => 'Thanks!',
                 ],
             ],
+        ],
+    ],
+
+    'validations' => [
+        'message' => [
+            'decimal' => 'The :attribute must be a decimal.',
         ],
     ],
 
